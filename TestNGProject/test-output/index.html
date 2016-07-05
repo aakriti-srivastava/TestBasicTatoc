@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods, 1 failed,   19 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestpackage.FirstTestNgFile" hash-for-method="popupsubmitwithouttext">popupsubmitwithouttext</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestpackage.FirstTestNgFile" hash-for-method="RedColorGridproceed">RedColorGridproceed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestpackage.FirstTestNgFile" hash-for-method="greenColorGridproceed">greenColorGridproceed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestpackage.FirstTestNgFile" hash-for-method="greencolorboxdisplayed">greencolorboxdisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestpackage.FirstTestNgFile" hash-for-method="popupsubmitdisplayed">popupsubmitdisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestpackage.FirstTestNgFile" hash-for-method="popupsubmitwithtext">popupsubmitwithtext</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestpackage.FirstTestNgFile" hash-for-method="popuptextboxdisplayed">popuptextboxdisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestpackage.FirstTestNgFile" hash-for-method="redcolorboxdisplayed">redcolorboxdisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestpackage.FirstTestNgFile" hash-for-method="verifyHomepageTitle">verifyHomepageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestpackage.FirstTestNgFile" hash-for-method="verifycolorboxdisplayed">verifycolorboxdisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestpackage.FirstTestNgFile" hash-for-method="verifydraggabledisplayed">verifydraggabledisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestpackage.FirstTestNgFile" hash-for-method="verifydragging">verifydragging</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestpackage.FirstTestNgFile" hash-for-method="verifydropboxdisplayed">verifydropboxdisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestpackage.FirstTestNgFile" hash-for-method="verifyframeproceedwithoutsamecolor">verifyframeproceedwithoutsamecolor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestpackage.FirstTestNgFile" hash-for-method="verifyframeproceedwithsamecolor">verifyframeproceedwithsamecolor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestpackage.FirstTestNgFile" hash-for-method="verifypopuplaunched">verifypopuplaunched</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestpackage.FirstTestNgFile" hash-for-method="verifyproceedafterdrag">verifyproceedafterdrag</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestpackage.FirstTestNgFile" hash-for-method="verifyproceedwithoutdrag">verifyproceedwithoutdrag</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestpackage.FirstTestNgFile" hash-for-method="verifyrepaintworks">verifyrepaintworks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestpackage.FirstTestNgFile" hash-for-method="verifywhiteboxdisplayed">verifywhiteboxdisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">firsttestpackage.FirstTestNgFile</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="popupsubmitwithouttext">
+                  </a> <!-- popupsubmitwithouttext -->
+                  <span class="method-name">popupsubmitwithouttext</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#name&quot;}
+Command duration or timeout: 6 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;N/A&apos;, ip: &apos;N/A&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-88-generic&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 41331091-df74-49ba-80c1-4257e55b6be9
+*** Element info: {Using=css selector, value=#name}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at firsttestpackage.FirstTestNgFile.popupsubmitwithouttext(FirstTestNgFile.java:453)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#name&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;N/A&apos;, ip: &apos;N/A&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-88-generic&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous550970642862174490webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///tmp/anonymous550970642862174490webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous550970642862174490webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous550970642862174490webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous550970642862174490webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">firsttestpackage.FirstTestNgFile</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RedColorGridproceed">
+                  </a> <!-- RedColorGridproceed -->
+                  <span class="method-name">RedColorGridproceed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="greenColorGridproceed">
+                  </a> <!-- greenColorGridproceed -->
+                  <span class="method-name">greenColorGridproceed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="greencolorboxdisplayed">
+                  </a> <!-- greencolorboxdisplayed -->
+                  <span class="method-name">greencolorboxdisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="popupsubmitdisplayed">
+                  </a> <!-- popupsubmitdisplayed -->
+                  <span class="method-name">popupsubmitdisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="popupsubmitwithtext">
+                  </a> <!-- popupsubmitwithtext -->
+                  <span class="method-name">popupsubmitwithtext</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="popuptextboxdisplayed">
+                  </a> <!-- popuptextboxdisplayed -->
+                  <span class="method-name">popuptextboxdisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="redcolorboxdisplayed">
+                  </a> <!-- redcolorboxdisplayed -->
+                  <span class="method-name">redcolorboxdisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomepageTitle">
+                  </a> <!-- verifyHomepageTitle -->
+                  <span class="method-name">verifyHomepageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifycolorboxdisplayed">
+                  </a> <!-- verifycolorboxdisplayed -->
+                  <span class="method-name">verifycolorboxdisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifydraggabledisplayed">
+                  </a> <!-- verifydraggabledisplayed -->
+                  <span class="method-name">verifydraggabledisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifydragging">
+                  </a> <!-- verifydragging -->
+                  <span class="method-name">verifydragging</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifydropboxdisplayed">
+                  </a> <!-- verifydropboxdisplayed -->
+                  <span class="method-name">verifydropboxdisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyframeproceedwithoutsamecolor">
+                  </a> <!-- verifyframeproceedwithoutsamecolor -->
+                  <span class="method-name">verifyframeproceedwithoutsamecolor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyframeproceedwithsamecolor">
+                  </a> <!-- verifyframeproceedwithsamecolor -->
+                  <span class="method-name">verifyframeproceedwithsamecolor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifypopuplaunched">
+                  </a> <!-- verifypopuplaunched -->
+                  <span class="method-name">verifypopuplaunched</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyproceedafterdrag">
+                  </a> <!-- verifyproceedafterdrag -->
+                  <span class="method-name">verifyproceedafterdrag</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyproceedwithoutdrag">
+                  </a> <!-- verifyproceedwithoutdrag -->
+                  <span class="method-name">verifyproceedwithoutdrag</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyrepaintworks">
+                  </a> <!-- verifyrepaintworks -->
+                  <span class="method-name">verifyrepaintworks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifywhiteboxdisplayed">
+                  </a> <!-- verifywhiteboxdisplayed -->
+                  <span class="method-name">verifywhiteboxdisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/tmp/testng-eclipse--1102130205/testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;firsttestpackage.FirstTestNgFile&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'popupsubmitwithtext')
+data.setCell(0, 2, 'firsttestpackage.FirstTestNgFile')
+data.setCell(0, 3, 2611);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'popupsubmitwithouttext')
+data.setCell(1, 2, 'firsttestpackage.FirstTestNgFile')
+data.setCell(1, 3, 2231);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifypopuplaunched')
+data.setCell(2, 2, 'firsttestpackage.FirstTestNgFile')
+data.setCell(2, 3, 2097);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifywhiteboxdisplayed')
+data.setCell(3, 2, 'firsttestpackage.FirstTestNgFile')
+data.setCell(3, 3, 1266);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyframeproceedwithsamecolor')
+data.setCell(4, 2, 'firsttestpackage.FirstTestNgFile')
+data.setCell(4, 3, 816);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyrepaintworks')
+data.setCell(5, 2, 'firsttestpackage.FirstTestNgFile')
+data.setCell(5, 3, 260);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyframeproceedwithoutsamecolor')
+data.setCell(6, 2, 'firsttestpackage.FirstTestNgFile')
+data.setCell(6, 3, 221);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'greenColorGridproceed')
+data.setCell(7, 2, 'firsttestpackage.FirstTestNgFile')
+data.setCell(7, 3, 209);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyproceedafterdrag')
+data.setCell(8, 2, 'firsttestpackage.FirstTestNgFile')
+data.setCell(8, 3, 204);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'greencolorboxdisplayed')
+data.setCell(9, 2, 'firsttestpackage.FirstTestNgFile')
+data.setCell(9, 3, 161);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'RedColorGridproceed')
+data.setCell(10, 2, 'firsttestpackage.FirstTestNgFile')
+data.setCell(10, 3, 146);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifycolorboxdisplayed')
+data.setCell(11, 2, 'firsttestpackage.FirstTestNgFile')
+data.setCell(11, 3, 144);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyproceedwithoutdrag')
+data.setCell(12, 2, 'firsttestpackage.FirstTestNgFile')
+data.setCell(12, 3, 132);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifydragging')
+data.setCell(13, 2, 'firsttestpackage.FirstTestNgFile')
+data.setCell(13, 3, 101);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'popuptextboxdisplayed')
+data.setCell(14, 2, 'firsttestpackage.FirstTestNgFile')
+data.setCell(14, 3, 74);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'redcolorboxdisplayed')
+data.setCell(15, 2, 'firsttestpackage.FirstTestNgFile')
+data.setCell(15, 3, 73);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyHomepageTitle')
+data.setCell(16, 2, 'firsttestpackage.FirstTestNgFile')
+data.setCell(16, 3, 72);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifydraggabledisplayed')
+data.setCell(17, 2, 'firsttestpackage.FirstTestNgFile')
+data.setCell(17, 3, 70);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifydropboxdisplayed')
+data.setCell(18, 2, 'firsttestpackage.FirstTestNgFile')
+data.setCell(18, 3, 64);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'popupsubmitdisplayed')
+data.setCell(19, 2, 'firsttestpackage.FirstTestNgFile')
+data.setCell(19, 3, 60);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">firsttestpackage.FirstTestNgFile</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setbaseurl</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">verifyHomepageTitle</span>
+                <span class="method-start">5113 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">greencolorboxdisplayed</span>
+                <span class="method-start">5187 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">redcolorboxdisplayed</span>
+                <span class="method-start">5349 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">greenColorGridproceed</span>
+                <span class="method-start">5423 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">RedColorGridproceed</span>
+                <span class="method-start">5633 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifycolorboxdisplayed</span>
+                <span class="method-start">5779 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifywhiteboxdisplayed</span>
+                <span class="method-start">5924 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyrepaintworks</span>
+                <span class="method-start">7190 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyframeproceedwithoutsamecolor</span>
+                <span class="method-start">7450 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyframeproceedwithsamecolor</span>
+                <span class="method-start">7672 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifydraggabledisplayed</span>
+                <span class="method-start">8489 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifydropboxdisplayed</span>
+                <span class="method-start">8560 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifydragging</span>
+                <span class="method-start">8625 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyproceedafterdrag</span>
+                <span class="method-start">8726 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyproceedwithoutdrag</span>
+                <span class="method-start">8931 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifypopuplaunched</span>
+                <span class="method-start">9063 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">popuptextboxdisplayed</span>
+                <span class="method-start">11161 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">popupsubmitdisplayed</span>
+                <span class="method-start">11235 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">popupsubmitwithtext</span>
+                <span class="method-start">11295 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">popupsubmitwithouttext</span>
+                <span class="method-start">13906 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">closing</span>
+                <span class="method-start">16799 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
